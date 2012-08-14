@@ -1,7 +1,7 @@
 CFLAGS=-Wall -g
 
-all: ex1 ex3 ex4
+all: ex1 ex3 ex4 ex5 ex6
 
 clean:
-	rm -f ex1 ex3 ex4 ex5
+	find . -perm 755 -type f -depth 1 | xargs rm 
 	rm -rf *.dSYM
